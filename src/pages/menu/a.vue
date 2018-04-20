@@ -1,6 +1,6 @@
 <config>
   {
-    a: a
+    a: 'a'
   }
 </config>
 
@@ -18,10 +18,3 @@ Page({
   }
 })
 </script>
-
-<style>
-
-.middle-p {
-  padding:15px;
-}
-</style>

@@ -1,6 +1,6 @@
 <config>
   {
-    a: a
+    a: 'a'
   }
 </config>
 
