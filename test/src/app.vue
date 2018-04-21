@@ -52,28 +52,7 @@ App({
 $mmt: #225;
 
 .container {
-  position: relative;
-  min-height: 100%;
-  font-size: 32rpx;
-  box-sizing: border-box;
-}
-html, body, page {
-  height: 100%;
-  font-family: PingFangSC-Light sans-serif;
-}
-
-.fix-iphonex-container {
-  padding-bottom: 68rpx !important;
-}
-.fix-iphonex-button {
-  bottom: 68rpx !important;
-  &::after {
-    content: ' ';
-    position: fixed;
-    bottom: 0!important;
-    height: 68rpx!important;
-    width: 100%;
-    background: $mmt;
-  }
+  display: flex;
+  color: $mmt;
 }
 </style>

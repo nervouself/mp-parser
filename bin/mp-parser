@@ -1,0 +1,31 @@
+#!/usr/bin/env node
+
+const fs = require('fs');
+const path = require('path');
+const program = require('commander');
+
+const pkg = require('../package.json');
+const Mpp = require('../lib/index.js');
+
+program
+  .version(pkg.version)
+  .option('-c, --config [config]', '指定配置文件')
+  .option('-w, --watch', '启用监听')
+  .parse(process.argv);
+
+const watch = program.watch ? true: false;
+
+let config = {};
+const confPath = path.join(process.cwd(), 'mpp.config.js');
+if (fs.existsSync(confPath)) {
+  config = require(confPath);
+}
+if (program.config && typeof program.config === 'string') {
+  config = require(path.resolve(process.cwd(), program.config));
+}
+
+const Parser = new Mpp(config);
+
+Parser.parseApp();
+Parser.parseDirs();
+Parser.copyDirs();

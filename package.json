@@ -1,18 +1,25 @@
 {
   "name": "mp-parser",
   "version": "1.0.0",
-  "description": "",
-  "main": "./lib/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
+  "author": "shilei",
   "license": "ISC",
+  "description": "mini-program parser",
+  "main": "./lib/index.js",
+  "keywords": [
+    "mp-parser",
+    "mp",
+    "mini-program"
+  ],
+  "bin": {
+    "mp-parser": "./bin/mp-parser"
+  },
   "dependencies": {
+    "autoprefixer": "^8.3.0",
     "bluebird": "^3.5.1",
     "chalk": "^2.4.0",
     "fs-extra": "^5.0.0",
     "node-sass": "^4.8.3",
+    "postcss": "^6.0.21",
     "vue-template-compiler": "^2.5.16"
   }
 }

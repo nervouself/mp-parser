@@ -29,6 +29,7 @@ Page({
 <style>
 
 .middle-p {
+  display: flex;
   padding:15px;
 }
 </style>
