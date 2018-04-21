@@ -17,6 +17,8 @@ y-init
 npm install && npm run dev
 ```
 
+或 参考 test 文件夹自己新建目录结构即可。
+
 ## 配置文件
 
 默认配置如下，如有需求可以通过修改项目下的 mpp.config.js 来进行覆盖。
