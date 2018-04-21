@@ -21,7 +21,9 @@ Component({
     },
     myProperty2: String // 简化的定义方式
   },
-  data: {}, // 私有数据，可用于模版渲染
+  data: {
+    message: '1'
+  }, // 私有数据，可用于模版渲染
 
   // 生命周期函数，可以为函数，或一个在methods段中定义的方法名
   attached: function(){},

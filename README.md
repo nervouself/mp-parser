@@ -17,7 +17,7 @@ y-init
 npm install && npm run dev
 ```
 
-或 参考 test 文件夹自己新建目录结构即可。
+或 参考 example 文件夹自己新建目录结构即可。
 
 ## 配置文件
 
