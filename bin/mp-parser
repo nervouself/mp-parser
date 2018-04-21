@@ -13,7 +13,7 @@ program
   .option('-w, --watch', '启用监听')
   .parse(process.argv);
 
-const watch = program.watch ? true: false;
+const watch = program.watch ? true : false;
 
 let config = {};
 const confPath = path.join(process.cwd(), 'mpp.config.js');
@@ -29,3 +29,7 @@ const Parser = new Mpp(config);
 Parser.parseApp();
 Parser.parseDirs();
 Parser.copyDirs();
+
+if (watch) {
+  Parser.watch();
+}

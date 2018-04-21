@@ -40,7 +40,6 @@ Component({
       this.applyDataUpdates()
     },
     _propertyChange: function(newVal, oldVal) {
-
     }
   }
 

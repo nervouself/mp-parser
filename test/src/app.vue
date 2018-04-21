@@ -43,7 +43,7 @@ App({
     console.log(msg)
   },
   globalData: {
-    a: 'I am global data',
+    a: 'I am global data'
   }
 })
 </script>
