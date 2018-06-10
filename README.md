@@ -4,20 +4,16 @@
 
 ## 使用方法
 
-使用项目初始化工具 y-init
-
 ```bash
-# 第一步，安装 y-init
-npm install -g y-init
+# 第一步，安装 mp-parser
+npm install --save mp-parser
 
-# 第二步，初始化项目，选择 wxapp
-y-init
+# 第二步，参考 example 文件夹自己新建目录结构
 
-# 第三步，安装依赖并运行
-npm install && npm run dev
+# 第三步，运行
+mp-parser
 ```
-
-或 参考 example 文件夹自己新建目录结构即可。
+执行 `mp-parser --help` 查看帮助。
 
 ## 配置文件
 
