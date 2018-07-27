@@ -13,9 +13,6 @@
 </config>
 
 <script>
-const Promise = require('./npm/promise-polyfill/index.js');
-const mta = require('./npm/mta-analysis/index.js');
-
 App({
   onLaunch: function(options) {
     // Do something initial when launch.
@@ -30,7 +27,7 @@ App({
     console.log(msg)
   },
   globalData: {
-    mta,
+    
   }
 })
 </script>
