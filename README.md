@@ -29,15 +29,13 @@ module.exports = {
   // 解析输出目录
   dist: 'dist',
 
-  // 源代码目录中的入口 app 文件名
-  app: 'app.vue',
-  // 需要解析的文件夹
-  needParseDirs: ['pages', 'components'],
-  // 需要直接复制的文件夹
-  needCopyDirs: ['images'],
+  // 需要解析的文件拓展名
+  needParseExts: ['vue'],
+  // 需要复制的文件拓展名
+  needCopyExts: ['js', 'jpg', 'jpeg', 'png', 'svg', 'gif'],
 
   // 各标签块对应生成的扩展名
-  exts: {
+  outputExts: {
     template: 'wxml',
     style: 'wxss',
     script: 'js',
@@ -48,7 +46,7 @@ module.exports = {
 
 ## 功能特性
 
-- 支持单文件化开发原生小程序，以 .vue 扩展名结尾
+- 支持单文件化开发原生小程序，默认以 .vue 扩展名结尾
 - 支持 sass/scss 编译
 
 示例：
