@@ -26,8 +26,7 @@ if (program.config && typeof program.config === 'string') {
 
 const Parser = new Mpp(config);
 
-Parser.parseDirs();
-Parser.copyDirs();
+Parser.parse();
 
 if (watch) {
   Parser.watch();
